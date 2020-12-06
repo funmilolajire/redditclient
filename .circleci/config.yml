@@ -12,8 +12,11 @@ jobs:
       - run:
           name: Test
           command: npm run test
+      - store_artifacts:
+          path: coverage
+          destination: coverage
       - store_test_results:
-          path: ~/project/test-results
+          path: test-results.xml
 
   build:
     executor: node/default
@@ -28,5 +31,5 @@ jobs:
 workflows:
   node-tests:
     jobs:
-      - test
       - build
+      - test
