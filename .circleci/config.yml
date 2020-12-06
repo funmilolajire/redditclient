@@ -7,6 +7,8 @@ workflows:
     jobs:
       - node/test:
           version: 13.11.0
+      - store_test_results:
+          path: test-results
       - node/test:
           version: 12.16.0
       - node/test:
