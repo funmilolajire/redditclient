@@ -1,7 +1,61 @@
 version: 2.1
 orbs:
   node: circleci/node@3.0.0
+jobs:
+  test:
+    executor: node/default
+    steps:
+      - checkout
+      - node/install-packages:
+          cache-path: ~/project/node_modules
+          override-ci-command: npm install
+      - run:
+          name: Test
+          command: npm run test
+      - store_test_results:
+          path: ~/project/__tests__
+      - store_artifacts:
+          path: coverage
+          destination: coverage
+
+  build:
+    executor: node/default
+    steps:
+      - checkout
+      - node/install-packages:
+          cache-path: ~/project/node_modules
+          override-ci-command: npm install
+      - run:
+          name: Build
+          command: npm run build
+  deploy:
+    executor: node/default
+    steps:
+      - checkout
+      - node/install-packages:
+          cache-path: ~/project/node_modules
+          override-ci-command: npm install
+      - run:
+          name: Build
+          command: npm run build
+      - run:
+          name: Deploy
+          command: npm run netlify:deploy
 workflows:
-  node-tests:
+  build_test_deploy:
     jobs:
-      - node/test
+      - build
+      - test:
+          requires:
+            - build
+      - hold:
+          type: approval
+          filters:
+            branches:
+              only: /production\/.*/
+          requires:
+            - build
+            - test
+      - deploy:
+          requires:
+            - hold
