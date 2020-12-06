@@ -12,11 +12,11 @@ jobs:
       - run:
           name: Test
           command: npm run test
+      - store_test_results:
+          path: ~/project/test-results
       - store_artifacts:
           path: coverage
           destination: coverage
-      - store_test_results:
-          path: test-results.xml
 
   build:
     executor: node/default
@@ -28,8 +28,19 @@ jobs:
       - run:
           name: Build
           command: npm run build
+  deploy:
+    executor: node/default
+    steps:
+      - checkout
+      - node/install-packages:
+          cache-path: ~/project/node_modules
+          override-ci-command: npm install
+      - run:
+          name: Deploy
+          command: netlify:deploy
 workflows:
-  node-tests:
+  build_test_deploy:
     jobs:
       - build
       - test
+      - deploy
