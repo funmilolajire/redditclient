@@ -11,7 +11,7 @@ jobs:
           override-ci-command: npm install
       - run: npm run test
       - store_test_results:
-          path: test-results
+          path: ~/project/test-results
 
   build:
     executor: node/default
