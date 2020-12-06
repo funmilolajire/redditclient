@@ -5,5 +5,3 @@ workflows:
   node-tests:
     jobs:
       - node/test
-      - npm run build
-      - netlify deploy
