@@ -10,6 +10,13 @@ jobs:
     steps:
       - checkout
       - run: npm run build
+  test:
+    executor:
+      name: win/default
+      size: "medium"
+    steps:
+      - checkout
+      - run: npm run test
 workflows:
   node-tests:
     jobs:
