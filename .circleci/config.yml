@@ -36,6 +36,9 @@ jobs:
           cache-path: ~/project/node_modules
           override-ci-command: npm install
       - run:
+          name: Build
+          command: npm run build
+      - run:
           name: Deploy
           command: npm run netlify:deploy
 workflows:
