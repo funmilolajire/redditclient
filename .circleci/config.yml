@@ -20,5 +20,5 @@ jobs:
 workflows:
   node-tests:
     jobs:
-      - win/test
+      - test
       - build
