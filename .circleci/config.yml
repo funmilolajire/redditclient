@@ -54,5 +54,8 @@ workflows:
             - build
             - test
       - deploy:
+          filters:
+            branches:
+              only: /production\/.*/
           requires:
             - hold
