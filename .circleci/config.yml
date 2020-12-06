@@ -52,7 +52,7 @@ workflows:
           type: approval
           filters:
             branches:
-              only: /production\/.*/
+              only: production
           requires:
             - build
             - test
