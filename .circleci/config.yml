@@ -1,15 +1,16 @@
 version: 2.1
-orbs: # declare what orbs we are going to use
-  node: circleci/node@2.0.2 # the node orb provides common node-related configuration
-
+orbs:
+  node: circleci/node@3.0.0
+jobs:
+  test:
+    executor: node/default
+    steps:
+      - checkout
+      - node/install-packages:
+          cache-path: ~/project/node_modules
+          override-ci-command: npm install
+      - run: npm run test
 workflows:
-  matrix-tests:
+  node-tests:
     jobs:
-      - node/test:
-          version: 13.11.0
-      - store_test_results:
-          path: test-results
-      - node/test:
-          version: 12.16.0
-      - node/test:
-          version: 10.19.0
+      - test
