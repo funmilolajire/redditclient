@@ -13,7 +13,7 @@ jobs:
           name: Test
           command: npm run test
       - store_test_results:
-          path: ~/project/test-results
+          path: ~/project/__tests__
       - store_artifacts:
           path: coverage
           destination: coverage
@@ -37,7 +37,7 @@ jobs:
           override-ci-command: npm install
       - run:
           name: Deploy
-          command: netlify:deploy
+          command: npm run netlify:deploy
 workflows:
   build_test_deploy:
     jobs:
