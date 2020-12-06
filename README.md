@@ -1,68 +1,67 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+# Reddit Client  
 
-## Available Scripts
+> This is a web application that retrieves data from reddit using it's api and allows users to view and search posts and comments provided by the api.
 
-In the project directory, you can run:
+## Table of contents  
 
-### `yarn start`
+  - [General info](#general-info)
+  - [Features](#features)
+  - [Status](#status)
+  - [Inspiration](#inspiration)
+  - [Contact](#contact)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## General info  
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+This project is built on reddit's api, user's are able to see an initial view whn first visiting the site, they can search for posts using terms, can filter the results based on predefined categories and view comments under each post. It is responsive and can be used on any modern browser.  
+This project is built to practice my react, redux, and test driven development skills. I use git for version control, zenhub for project management, jest and enzyme to write unit tests, testcafe for end to end tests, gsap for animations, circleci to set up the project's ci/cd workflow and wrote the code using web accessiblity best practices.  
 
-### `yarn test`
+<!-- ## Screenshots include wireframes plix  
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+(!)[Example screenshot](./img/screenshot.png)
 
-### `yarn build`
+## Technologies  
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Tech 1 - version 1.0
+- Tech 2 - version 2.0
+- Tech 3 - version 3.0
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Setup  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Describe how to install / setup your local environement / add link to demo version.
 
-### `yarn eject`
+## Code Examples  
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Show examples of usage:
+`put-your-code-here`
+-->
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Features  
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+<!--List of features ready and TODOs for future development
+- Awesome feature 1
+- Awesome feature 2
+- Awesome feature 3
+-->
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+To-do list:  
 
-## Learn More
+- Application can be used on any device
+- Application can be used on any modern browser
+- Shows an initial view of data to user on first visit
+- Users can search data using terms
+- Users can filter data based on predefined categories
+- Users are shown a detail view when they select an item
+- Users are able to leave an error state
+- Application should be a progressive web app
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Status  
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Project is: _in progress_
 
-### Code Splitting
+## Inspiration  
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+This project is inspired by a portfolio project on [codecademy's](https://www.codecademy.com/paths/full-stack-engineer-career-path) full stack engineer career path.
 
-### Analyzing the Bundle Size
+## Contact  
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Created by [@funmilolajire](mailto:funmilolajire@gmail.com) - feel free to contact me!  
