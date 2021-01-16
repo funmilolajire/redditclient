@@ -1,0 +1,10 @@
+.ComingSoon {
+    background-color: aquamarine;
+
+    div {
+        &::before {
+            height: 3rem;
+            width: 3rem;
+        }
+    }
+}
