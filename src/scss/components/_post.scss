@@ -1,0 +1,67 @@
+.Post {
+    @apply relative z-10 px-8 py-4 overflow-hidden text-gray-700 bg-gray-50;
+
+    .Post--Container {
+        @apply flex items-center;
+
+        div.Post-Likes {
+            @apply bg-gray-50;
+
+            p {
+                @apply flex flex-col text-gray-500;
+
+                span.likes {
+                    @apply pb-1 text-3xl font-bold;
+                }
+
+                span.label {
+                    @apply text-2xl font-bold;
+                }
+            }
+        }
+
+        div.Post--Content {
+            @apply flex items-center pl-12;
+
+            figure {
+                @apply h-40 overflow-hidden rounded-2xl w-60;
+
+                img {
+                    @apply w-full h-auto transition duration-1000 ease-out transform cursor-pointer;
+
+                    &:hover {
+                        @apply scale-150;
+                    }
+                }
+            }
+
+            section {
+                @apply pl-12 font-light;
+
+                h3 {
+                    @apply text-3xl font-bold cursor-pointer;
+
+                    &:hover {
+                        @apply text-ogColor;
+                    }
+                }
+
+                p {
+                    @apply py-2 text-2xl leading-relaxed text-gray-500;
+
+                    span {
+                        @apply font-bold;
+                    }
+                }
+
+                div.Post--Comments {
+                    @apply text-2xl text-gray-500;
+
+                    span.comments {
+                        @apply font-bold;
+                    }
+                }
+            }
+        }
+    }
+}

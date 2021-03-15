@@ -1,0 +1,7 @@
+.App {
+    @apply container min-h-screen bg-gray-100 text-base;
+
+    main {
+        @apply container flex items-stretch justify-end min-h-screen;
+    }
+}

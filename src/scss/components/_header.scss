@@ -1,0 +1,28 @@
+header {
+    @apply relative z-30 w-screen mb-40;
+
+    div.header-inner {
+        @apply top-0 w-full py-2 shadow-md bg-gray-50 opacity-95 fixed;
+
+        section {
+            @apply flex items-center justify-center;
+
+            figure {
+                @apply w-20;
+
+                img {
+                    @apply w-full h-auto;
+                }
+            }
+
+            h1 {
+                @apply pl-5 text-6xl;
+                font-family: 'Stylish', sans-serif;
+
+                span {
+                    @apply text-ogColor;
+                }
+            }
+        }
+    }
+}

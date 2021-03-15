@@ -1,0 +1,11 @@
+.Subreddit {
+    @apply my-2 font-bold text-gray-500;
+
+    span {
+        @apply text-2xl leading-3 cursor-pointer;
+
+        &:hover {
+            @apply text-gray-800;
+        }
+    }
+}
