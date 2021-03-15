@@ -1,35 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders Header component make snapshot of Header component matches the snapshot 1`] = `
-<header
-  className="relative z-30 w-screen mb-24"
->
+<header>
   <div
-    className="fixed top-0 w-full py-2 shadow-md bg-gray-50 opacity-95"
+    className="header-inner"
   >
-    <section
-      className="flex items-center justify-center"
-    >
-      <figure
-        className="w-20"
-      >
+    <section>
+      <figure>
         <img
           alt="site logo"
-          className="w-full h-auto"
           src="logo192.png"
         />
       </figure>
-      <h1
-        className="pl-5 text-6xl"
-        style={
-          Object {
-            "fontFamily": "Stylish, sans-serif",
-          }
-        }
-      >
-        <span
-          className="text-yellow-500"
-        >
+      <h1>
+        <span>
           Reddit
         </span>
         Client
