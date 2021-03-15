@@ -6,7 +6,7 @@ import { App } from '../../app/App';
 import { Header } from '../../components/Header';
 import { Subreddits } from '../../components/Subreddits';
 import { Posts } from '../../components/Posts';
-// import { ComingSoon } from '../../components/ComingSoon';
+import { ComingSoon } from '../../components/ComingSoon';
 
 describe('renders App Component', () => {
   const AppComponent = mount(
@@ -17,8 +17,8 @@ describe('renders App Component', () => {
 
   describe('Contains Child Components', () => {
     test('contains all components', () => {
-      // const getComponents = AppComponent.containsAllMatchingElements([<Header />, <ComingSoon />])
-      const getComponents = AppComponent.containsAllMatchingElements([<Header />, <Subreddits />, <Posts />]);
+      const getComponents = AppComponent.containsAllMatchingElements([<Header />, <ComingSoon />])
+      // const getComponents = AppComponent.containsAllMatchingElements([<Header />, <Subreddits />, <Posts />]);
       expect(getComponents).toBeTrue();
     })
   })
