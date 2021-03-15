@@ -1,5 +1,9 @@
 .ComingSoon {
+    @apply container flex items-center justify-center h-screen font-extrabold;
+
     div {
+        @apply bg-yellow-500 border-2 border-gray-800 border-solid skew-y-2 transform-gpu text-gray-50 text-9xl;
+
         &::before {
             height: 3rem;
             width: 3rem;

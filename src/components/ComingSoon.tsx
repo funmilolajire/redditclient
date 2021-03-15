@@ -16,8 +16,8 @@ export const ComingSoon = () => {
     })
 
     return (
-        <div ref={boxRef} className="container flex items-center justify-center h-screen font-extrabold ComingSoon">
-            <div className="bg-yellow-500 border-2 border-gray-800 border-solid skew-y-2 transform-gpu text-gray-50 text-9xl">
+        <div ref={boxRef} className="ComingSoon">
+            <div className="">
                 <p>Coming Soon</p>
             </div>
         </div>

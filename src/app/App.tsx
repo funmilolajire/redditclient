@@ -1,7 +1,7 @@
 import { Header } from '../components/Header';
 import { ComingSoon } from '../components/ComingSoon';
-// import { Posts } from '../components/Posts';
-// import { Subreddits } from '../components/Subreddits';
+import { Posts } from '../components/Posts';
+import { Subreddits } from '../components/Subreddits';
 import '../scss/main.scss';
 export const App = () => {
     return (
