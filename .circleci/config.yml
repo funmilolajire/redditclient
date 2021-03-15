@@ -72,11 +72,12 @@ workflows:
   test_build_deploy:
     jobs:
       - test
-      - coverage
       - build:
           requires:
             - test
-            - coverage
+      - coverage:
+          requires:
+            - build
       - hold:
           type: approval
           filters:
