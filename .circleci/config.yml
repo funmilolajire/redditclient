@@ -35,10 +35,12 @@ jobs:
           when: always
       - run:
           name: Send coverage report to Code Climate
-          command:
+          command: |
+            curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+            chmod +x ./cc-test-reporter
             # nyc report requires that nyc has already been run,
             # which creates the .nyc_output folder containing necessary data
-            ./cc-test-reporter -t lcov
+            ./cc-test-reporter after-build -t lcov
           # Upload results
       - store_artifacts: # upload test coverage as artifact
           path: ./coverage/lcov.info

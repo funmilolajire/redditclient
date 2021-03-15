@@ -1,6 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1615768803586" clover="3.2.0">
-  <project timestamp="1615768803586" name="All files">
-    <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0" elements="0" coveredelements="0" complexity="0" loc="0" ncloc="0" packages="0" files="0" classes="0"/>
+<coverage generated="1615770909757" clover="3.2.0">
+  <project timestamp="1615770909757" name="All files">
+    <metrics statements="59" coveredstatements="55" conditionals="4" coveredconditionals="4" methods="18" coveredmethods="16" elements="81" coveredelements="75" complexity="0" loc="59" ncloc="59" packages="2" files="10" classes="10"/>
+    <package name="app">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="App.tsx" path="C:\Users\OLAMI\OneDrive\Documents\Web Development\Projects\react\redditclient\src\app\App.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="components">
+      <metrics statements="57" coveredstatements="53" conditionals="4" coveredconditionals="4" methods="17" coveredmethods="15"/>
+      <file name="ComingSoon.tsx" path="C:\Users\OLAMI\OneDrive\Documents\Web Development\Projects\react\redditclient\src\components\ComingSoon.tsx">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+      </file>
+      <file name="Header.tsx" path="C:\Users\OLAMI\OneDrive\Documents\Web Development\Projects\react\redditclient\src\components\Header.tsx">
+        <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="10" count="3" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="20" count="2" type="stmt"/>
+        <line num="27" count="3" type="stmt"/>
+      </file>
+      <file name="Modal.tsx" path="C:\Users\OLAMI\OneDrive\Documents\Web Development\Projects\react\redditclient\src\components\Modal.tsx">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+        <line num="2" count="0" type="stmt"/>
+      </file>
+      <file name="ModalContainer.tsx" path="C:\Users\OLAMI\OneDrive\Documents\Web Development\Projects\react\redditclient\src\components\ModalContainer.tsx">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+      </file>
+      <file name="Post.tsx" path="C:\Users\OLAMI\OneDrive\Documents\Web Development\Projects\react\redditclient\src\components\Post.tsx">
+        <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="16" count="3" type="stmt"/>
+        <line num="17" count="33" type="stmt"/>
+        <line num="19" count="33" type="stmt"/>
+        <line num="21" count="33" type="stmt"/>
+        <line num="22" count="33" type="stmt"/>
+        <line num="23" count="33" type="stmt"/>
+        <line num="31" count="33" type="stmt"/>
+        <line num="51" count="3" type="stmt"/>
+      </file>
+      <file name="Posts.tsx" path="C:\Users\OLAMI\OneDrive\Documents\Web Development\Projects\react\redditclient\src\components\Posts.tsx">
+        <metrics statements="9" coveredstatements="9" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="16" count="2" type="stmt"/>
+        <line num="17" count="2" type="stmt"/>
+        <line num="19" count="2" type="stmt"/>
+        <line num="20" count="2" type="stmt"/>
+        <line num="21" count="2" type="stmt"/>
+        <line num="29" count="2" type="stmt"/>
+        <line num="31" count="2" type="stmt"/>
+        <line num="34" count="32" type="cond" truecount="2" falsecount="0"/>
+      </file>
+      <file name="Searchbar.tsx" path="C:\Users\OLAMI\OneDrive\Documents\Web Development\Projects\react\redditclient\src\components\Searchbar.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="3" type="stmt"/>
+        <line num="2" count="3" type="stmt"/>
+      </file>
+      <file name="Subreddit.tsx" path="C:\Users\OLAMI\OneDrive\Documents\Web Development\Projects\react\redditclient\src\components\Subreddit.tsx">
+        <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="9" count="43" type="stmt"/>
+        <line num="11" count="43" type="stmt"/>
+        <line num="13" count="43" type="stmt"/>
+        <line num="14" count="43" type="stmt"/>
+        <line num="15" count="43" type="stmt"/>
+        <line num="23" count="43" type="stmt"/>
+        <line num="29" count="3" type="stmt"/>
+      </file>
+      <file name="Subreddits.tsx" path="C:\Users\OLAMI\OneDrive\Documents\Web Development\Projects\react\redditclient\src\components\Subreddits.tsx">
+        <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="21" count="2" type="stmt"/>
+        <line num="30" count="2" type="stmt"/>
+        <line num="37" count="42" type="cond" truecount="2" falsecount="0"/>
+      </file>
+    </package>
   </project>
 </coverage>

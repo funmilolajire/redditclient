@@ -55,8 +55,8 @@
       }
     },
     "collectCoverageFrom": [
-      "src/components",
-      "src/app"
+      "src/components/*.tsx",
+      "src/app/App.tsx"
     ],
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
