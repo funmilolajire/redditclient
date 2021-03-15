@@ -38,7 +38,7 @@ jobs:
           command:
             # nyc report requires that nyc has already been run,
             # which creates the .nyc_output folder containing necessary data
-            ./cc-test-reporter after-build -t lcov
+            ./cc-test-reporter -t lcov
           # Upload results
       - store_artifacts: # upload test coverage as artifact
           path: ./coverage/lcov.info
@@ -72,12 +72,10 @@ workflows:
   test_build_deploy:
     jobs:
       - test
+      - coverage
       - build:
           requires:
             - test
-      - coverage:
-          requires:
-            - build
       - hold:
           type: approval
           filters:
