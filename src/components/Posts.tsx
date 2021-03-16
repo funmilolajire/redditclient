@@ -4,7 +4,7 @@ import { gsap } from 'gsap';
 import random from '../images/random.jpeg';
 
 const post = {
-    likes: 538,
+    votes: 538,
     postTitle: 'Questions about new wallet',
     postImage: random,
     time: 'an hour ago',

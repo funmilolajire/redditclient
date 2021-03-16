@@ -1,15 +1,14 @@
-import { useRef, useLayoutEffect } from 'react';
+import { useRef, useLayoutEffect, useEffect } from 'react';
+import { useAppDispatch, useAppSelector } from '../store/hooks';
+import { getSubredditsList } from '../store/slices/subredditsSlice';
 import { gsap } from 'gsap';
 import { Searchbar } from './Searchbar';
 import { Subreddit } from './Subreddit';
 
 export const Subreddits = () => {
-    const subreddits: string[] = ['askreddit', 'worldnews', 'videos', 'funny', 'todayilearned', 'pics', 'gaming', 'movies', 'news', 'gifs', 'mildyinteresting', 'aww', 'popular', 'all', 'random', 'hot', 'rising', 'controversial', 'top', 'gilded', 'users'];
-
+    //animations
     const boxRef = useRef<HTMLDivElement>(null);
-
     const subRef = useRef<HTMLHeadingElement>(null);
-
     useLayoutEffect(() => {
         const tl = gsap.timeline({})
         tl.from([boxRef.current], {
@@ -25,8 +24,19 @@ export const Subreddits = () => {
             duration: 2,
             ease: 'elastic',
         })
-    })
+    }, [])
 
+    //get subreddits list
+    const subreddits = useAppSelector((state: { subreddits: { value: string[] } }): string[] => state.subreddits.value)
+    const dispatch = useAppDispatch();
+    const getSubreddits = async () => {
+        await dispatch(getSubredditsList());
+    }
+    useEffect(() => {
+        getSubreddits();
+    }, [])
+
+    //JSX
     return (
         <div ref={boxRef} className="Subreddits">
             <div className="Subreddits--Container">

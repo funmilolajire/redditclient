@@ -3,7 +3,7 @@ import { gsap } from 'gsap';
 
 interface PostType {
     post: {
-        likes: number;
+        votes: number;
         comments: number;
         postTitle: string;
         user: string;
@@ -14,7 +14,7 @@ interface PostType {
 }
 
 export const Post = (props: PostType) => {
-    const { likes, comments, postTitle, user, subreddit, time, postImage } = props.post;
+    const { votes, comments, postTitle, user, subreddit, time, postImage } = props.post;
 
     const boxRef = useRef<HTMLDivElement>(null);
 
@@ -32,7 +32,7 @@ export const Post = (props: PostType) => {
         <div className="Post">
             <div ref={boxRef} className="Post--Container ">
                 <div className=" Post-Likes">
-                    <p><span className="likes">{likes}</span><span className="label">likes</span></p>
+                    <p><span className="likes">{votes}</span><span className="label">votes</span></p>
                 </div>
                 <div className="Post--Content">
                     <figure>
