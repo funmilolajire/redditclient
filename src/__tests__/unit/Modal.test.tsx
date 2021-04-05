@@ -16,9 +16,6 @@ describe('renders Modal component', () => {
         </Provider>
     )
 
-    test('make a snapshot of Modal Component', () => {
-        expect(ModalComponent).toMatchSnapshot()
-    })
 
     test('Modal closes on click', () => {
         const closeModal = ModalComponent.find('.Modal--Close')
