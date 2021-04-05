@@ -1,0 +1,15 @@
+.Main {
+    @apply relative w-3/4 pt-28;
+}
+
+@media all and (max-width: 1000px) {
+    .Main {
+        width: 70%;
+    }
+}
+
+@media all and (max-width: 700px) {
+    .Main {
+        width: 100vw;
+    }
+}

@@ -1,0 +1,275 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders ModalComment component make a snapshot of ModalComment Component 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <ModalComment
+    comment={
+      Object {
+        "author": "foul_dwimmerlaik",
+        "comment": "Gotta protect against ass-eating amoebas",
+        "downvotes": 10,
+        "num_replies": 10,
+        "permalink": "/r/Showerthoughts/comments/mdx3ge/our_buttholes_are_watertight_we_can_go_swimming/gscm02h/",
+        "time": 1616827642,
+        "upvotes": 10,
+      }
+    }
+  >
+    <div
+      className="ModalComment"
+      data-permalink="/r/Showerthoughts/comments/mdx3ge/our_buttholes_are_watertight_we_can_go_swimming/gscm02h/"
+    >
+      <p
+        className="Comment--Info"
+      >
+        comment made 
+        <span
+          className="time"
+        >
+          1616827642
+        </span>
+         by 
+        <span
+          className="author"
+        >
+          foul_dwimmerlaik
+        </span>
+      </p>
+      <div
+        className="Comment--Body"
+      >
+        Gotta protect against ass-eating amoebas
+      </div>
+      <div
+        className="Comment--Bottom"
+      >
+        <div
+          className="Comment--Replies"
+        >
+          <BiComment
+            className="reply-icon icon"
+          >
+            <IconBase
+              attr={
+                Object {
+                  "viewBox": "0 0 24 24",
+                }
+              }
+              className="reply-icon icon"
+            >
+              <svg
+                className="reply-icon icon"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                strokeWidth="0"
+                style={
+                  Object {
+                    "color": undefined,
+                  }
+                }
+                viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20,2H4C2.897,2,2,2.897,2,4v18l5.333-4H20c1.103,0,2-0.897,2-2V4C22,2.897,21.103,2,20,2z M20,16H6.667L4,18V4h16V16z"
+                  key="0"
+                />
+              </svg>
+            </IconBase>
+          </BiComment>
+          <span
+            className="comments value"
+          >
+            10
+          </span>
+          <span
+            className="label"
+          >
+            replies
+          </span>
+        </div>
+        <BsDot
+          className="dot-icon"
+        >
+          <IconBase
+            attr={
+              Object {
+                "fill": "currentColor",
+                "viewBox": "0 0 16 16",
+              }
+            }
+            className="dot-icon"
+          >
+            <svg
+              className="dot-icon"
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              strokeWidth="0"
+              style={
+                Object {
+                  "color": undefined,
+                }
+              }
+              viewBox="0 0 16 16"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clipRule="evenodd"
+                d="M8 9.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"
+                fillRule="evenodd"
+                key="0"
+              />
+            </svg>
+          </IconBase>
+        </BsDot>
+        <div
+          className="Votes Comment--Upvotes"
+        >
+          <GoArrowUp
+            className="arrow-icon icon"
+          >
+            <IconBase
+              attr={
+                Object {
+                  "viewBox": "0 0 10 16",
+                }
+              }
+              className="arrow-icon icon"
+            >
+              <svg
+                className="arrow-icon icon"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                strokeWidth="0"
+                style={
+                  Object {
+                    "color": undefined,
+                  }
+                }
+                viewBox="0 0 10 16"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5 3L0 9h3v4h4V9h3L5 3z"
+                  fillRule="evenodd"
+                  key="0"
+                />
+              </svg>
+            </IconBase>
+          </GoArrowUp>
+          <span
+            className="upvotes value"
+          >
+            10
+          </span>
+          <span
+            className="label"
+          >
+            upvotes
+          </span>
+        </div>
+        <BsDot
+          className="dot-icon"
+        >
+          <IconBase
+            attr={
+              Object {
+                "fill": "currentColor",
+                "viewBox": "0 0 16 16",
+              }
+            }
+            className="dot-icon"
+          >
+            <svg
+              className="dot-icon"
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              strokeWidth="0"
+              style={
+                Object {
+                  "color": undefined,
+                }
+              }
+              viewBox="0 0 16 16"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clipRule="evenodd"
+                d="M8 9.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"
+                fillRule="evenodd"
+                key="0"
+              />
+            </svg>
+          </IconBase>
+        </BsDot>
+        <div
+          className="Votes Comment--Downvotes"
+        >
+          <GoArrowDown
+            className="arrow-icon icon"
+          >
+            <IconBase
+              attr={
+                Object {
+                  "viewBox": "0 0 10 16",
+                }
+              }
+              className="arrow-icon icon"
+            >
+              <svg
+                className="arrow-icon icon"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                strokeWidth="0"
+                style={
+                  Object {
+                    "color": undefined,
+                  }
+                }
+                viewBox="0 0 10 16"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7 7V3H3v4H0l5 6 5-6H7z"
+                  fillRule="evenodd"
+                  key="0"
+                />
+              </svg>
+            </IconBase>
+          </GoArrowDown>
+          <span
+            className="downvotes value"
+          >
+            10
+          </span>
+          <span
+            className="label"
+          >
+            downvotes
+          </span>
+        </div>
+      </div>
+    </div>
+  </ModalComment>
+</Provider>
+`;

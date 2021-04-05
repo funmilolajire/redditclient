@@ -1,0 +1,346 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders App Component make snapshot of App component matches the snapshot 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <App>
+    <div
+      className="App"
+    >
+      <Header>
+        <header>
+          <div
+            className="header-inner"
+          >
+            <section>
+              <figure>
+                <img
+                  alt="site logo"
+                  src="logo192.png"
+                />
+              </figure>
+              <h1>
+                <span>
+                  Reddit
+                </span>
+                Client
+              </h1>
+            </section>
+          </div>
+        </header>
+      </Header>
+      <main>
+        <Sidebar>
+          <aside
+            className="Sidebar sm:hidden"
+            data-menu={true}
+          >
+            <div
+              className="Sidebar--Container"
+            >
+              <span
+                className="close"
+                onClick={[Function]}
+              >
+                <IoCloseOutline>
+                  <IconBase
+                    attr={
+                      Object {
+                        "viewBox": "0 0 512 512",
+                      }
+                    }
+                  >
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      strokeWidth="0"
+                      style={
+                        Object {
+                          "color": undefined,
+                        }
+                      }
+                      viewBox="0 0 512 512"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M368 368L144 144m224 0L144 368"
+                        fill="none"
+                        key="0"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="32"
+                      />
+                    </svg>
+                  </IconBase>
+                </IoCloseOutline>
+                 
+              </span>
+              <Searchbar>
+                <div
+                  className="Searchbar"
+                  onKeyDown={[Function]}
+                >
+                  <div
+                    className="Searchbar--Container"
+                  >
+                    <input
+                      autoComplete="off"
+                      id="search"
+                      name="search"
+                      onChange={[Function]}
+                      placeholder="search"
+                      type="text"
+                      value=""
+                    />
+                    <div
+                      className="Searchbar--Icon"
+                      onClick={[Function]}
+                    >
+                      <svg
+                        height="18"
+                        viewBox="0 0 18 18"
+                        width="18"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          clipRule="evenodd"
+                          d="M12.5 11H11.7L11.4 10.7C12.4 9.6 13 8.1 13 6.5C13 2.9 10.1 0 6.5 0C2.9 0 0 2.9 0 6.5C0 10.1 2.9 13 6.5 13C8.1 13 9.6 12.4 10.7 11.4L11 11.7V12.5L16 17.5L17.5 16L12.5 11ZM6.5 11C4 11 2 9 2 6.5C2 4 4 2 6.5 2C9 2 11 4 11 6.5C11 9 9 11 6.5 11Z"
+                          fillRule="evenodd"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </Searchbar>
+              <Subreddits>
+                <section
+                  className="pt-12 Subreddits"
+                >
+                  <h2
+                    className=""
+                  >
+                    subreddits
+                  </h2>
+                  <ul
+                    className="subreddits--list"
+                  />
+                </section>
+              </Subreddits>
+            </div>
+          </aside>
+          <aside
+            className="Mobile--Sidebar sm:flex hidden"
+            data-mobile-menu={true}
+            onClick={[Function]}
+          >
+            <span
+              className="menu"
+            >
+              <HiOutlineMenuAlt2>
+                <IconBase
+                  attr={
+                    Object {
+                      "fill": "none",
+                      "stroke": "currentColor",
+                      "viewBox": "0 0 24 24",
+                    }
+                  }
+                >
+                  <svg
+                    fill="none"
+                    height="1em"
+                    stroke="currentColor"
+                    strokeWidth="0"
+                    style={
+                      Object {
+                        "color": undefined,
+                      }
+                    }
+                    viewBox="0 0 24 24"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4 6h16M4 12h16M4 18h7"
+                      key="0"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                    />
+                  </svg>
+                </IconBase>
+              </HiOutlineMenuAlt2>
+               
+            </span>
+          </aside>
+        </Sidebar>
+        <Main>
+          <div
+            className="Main"
+          >
+            <Listings>
+              <div
+                className="Listings"
+              >
+                <ul
+                  className="Listings--List"
+                >
+                  <Listing
+                    key="hot"
+                    listItem="hot"
+                  >
+                    <li
+                      data-testid="hot"
+                      id="hot"
+                      onClick={[Function]}
+                    >
+                      hot
+                    </li>
+                  </Listing>
+                  <Listing
+                    key="new"
+                    listItem="new"
+                  >
+                    <li
+                      data-testid="new"
+                      id="new"
+                      onClick={[Function]}
+                    >
+                      new
+                    </li>
+                  </Listing>
+                  <Listing
+                    key="top"
+                    listItem="top"
+                  >
+                    <li
+                      data-testid="top"
+                      id="top"
+                      onClick={[Function]}
+                    >
+                      top
+                    </li>
+                  </Listing>
+                  <Listing
+                    key="best"
+                    listItem="best"
+                  >
+                    <li
+                      data-testid="best"
+                      id="best"
+                      onClick={[Function]}
+                    >
+                      best
+                    </li>
+                  </Listing>
+                  <Listing
+                    key="rising"
+                    listItem="rising"
+                  >
+                    <li
+                      data-testid="rising"
+                      id="rising"
+                      onClick={[Function]}
+                    >
+                      rising
+                    </li>
+                  </Listing>
+                  <Listing
+                    key="controversial"
+                    listItem="controversial"
+                  >
+                    <li
+                      data-testid="controversial"
+                      id="controversial"
+                      onClick={[Function]}
+                    >
+                      controversial
+                    </li>
+                  </Listing>
+                </ul>
+              </div>
+            </Listings>
+            <Posts>
+              <div
+                className="Posts"
+              />
+            </Posts>
+          </div>
+        </Main>
+      </main>
+      <ScrollToTop>
+        <span
+          aria-label="scroll to top"
+          className="ScrollToTop"
+          title="scroll to top"
+        >
+          <IoChevronUpCircle
+            className="ScrollToTopButton"
+            data-testid="ScrollToTopButton"
+            onClick={[Function]}
+            role="button"
+            style={
+              Object {
+                "display": "none",
+              }
+            }
+          >
+            <IconBase
+              attr={
+                Object {
+                  "viewBox": "0 0 512 512",
+                }
+              }
+              className="ScrollToTopButton"
+              data-testid="ScrollToTopButton"
+              onClick={[Function]}
+              role="button"
+              style={
+                Object {
+                  "display": "none",
+                }
+              }
+            >
+              <svg
+                className="ScrollToTopButton"
+                data-testid="ScrollToTopButton"
+                fill="currentColor"
+                height="1em"
+                onClick={[Function]}
+                role="button"
+                stroke="currentColor"
+                strokeWidth="0"
+                style={
+                  Object {
+                    "color": undefined,
+                    "display": "none",
+                  }
+                }
+                viewBox="0 0 512 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M256 48C141.13 48 48 141.13 48 256s93.13 208 208 208 208-93.13 208-208S370.87 48 256 48zm107.31 259.31a16 16 0 01-22.62 0L256 222.63l-84.69 84.68a16 16 0 01-22.62-22.62l96-96a16 16 0 0122.62 0l96 96a16 16 0 010 22.62z"
+                  key="0"
+                />
+              </svg>
+            </IconBase>
+          </IoChevronUpCircle>
+        </span>
+      </ScrollToTop>
+    </div>
+  </App>
+</Provider>
+`;

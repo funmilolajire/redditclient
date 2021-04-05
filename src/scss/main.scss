@@ -1,27 +1,37 @@
-/* autoprefixer grid: autoplace */
-@import-normalize;
-@import 'sanitize.css';
-@import 'sanitize.css/typography.css';
-@import 'sanitize.css/forms.css';
+@layer components {
+    /* autoprefixer grid: autoplace */
+    @import-normalize;
+    @import 'sanitize.css';
+    @import 'sanitize.css/typography.css';
+    @import 'sanitize.css/forms.css';
 
-//import helpers
-@import './helpers/functions';
-@import './helpers/mixins';
-@import './helpers/placeholders';
-@import './helpers/utilities';
-@import './helpers/variables';
+    //import helpers
+    @import './helpers/functions';
+    @import './helpers/mixins';
+    @import './helpers/placeholders';
+    @import './helpers/utilities';
+    @import './helpers/variables';
 
 
-//import components
-@import './components/comingSoon';
-@import './components/header';
-@import './components/modal';
-@import './components/modalContainer';
-@import './components/post';
-@import './components/posts';
-@import './components/searchbar';
-@import './components/subreddit';
-@import './components/subreddits';
+    //import components
+    @import './components/comingSoon';
+    @import './components/header';
+    @import './components/listing';
+    @import './components/listings';
+    @import './components/main';
+    @import './components/modal';
+    @import './components/modal__comment';
+    @import './components//modal__comments';
+    @import './components//modal__post';
+    @import './components/post';
+    @import './components/post__content';
+    @import './components/posts';
+    @import './components/scrollToTop';
+    @import './components/searchbar';
+    @import './components/sidebar';
+    @import './components/subreddit';
+    @import './components/subreddits';
 
-//import app
-@import './app/app';
+    //import app
+    @import './app/app';
+}

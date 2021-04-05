@@ -5,7 +5,7 @@ import logo from '../images/logo192.png';
 export const Header = () => {
     const boxRef = useRef<HTMLDivElement>(null);
     const logoRef = useRef<HTMLImageElement>(null);
-    const titleRef = useRef<HTMLHeadingElement>(null);
+    const nameRef = useRef<HTMLHeadingElement>(null);
 
     useLayoutEffect(() => {
         const tl = gsap.timeline({});
@@ -17,7 +17,7 @@ export const Header = () => {
             opacity: 0,
             ease: 'circ'
         })
-        tl.from([titleRef.current], {
+        tl.from([nameRef.current], {
             x: '3000px',
             opacity: 0,
             ease: 'slow'
@@ -31,7 +31,7 @@ export const Header = () => {
                     <figure ref={logoRef}>
                         <img src={logo} alt="site logo" />
                     </figure>
-                    <h1 ref={titleRef}>
+                    <h1 ref={nameRef}>
                         <span>Reddit</span>Client
                     </h1>
                 </section>

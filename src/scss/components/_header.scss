@@ -1,8 +1,8 @@
 header {
-    @apply relative z-30 w-screen;
+    @apply relative flex items-center z-30 w-screen;
 
     div.header-inner {
-        @apply top-0 w-full py-2 shadow-md bg-gray-50 opacity-95 fixed;
+        @apply top-0 w-full h-28 py-2 flex items-center justify-center shadow-md bg-gray-50 fixed;
 
         section {
             @apply flex items-center justify-center;
@@ -21,6 +21,18 @@ header {
 
                 span {
                     @apply text-ogColor;
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 450px) {
+    header {
+        div.header-inner {
+            section {
+                h1 {
+                    @apply pl-3;
                 }
             }
         }

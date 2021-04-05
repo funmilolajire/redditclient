@@ -1,0 +1,21 @@
+.Modal--Post {
+    // @apply relative;
+
+    p.Post--Info {
+        @apply text-2xl relative leading-relaxed text-gray-500 text-opacity-80;
+
+        span {
+            @apply font-semibold;
+        }
+    }
+
+    div.Post--Content--Wrapper {
+        a {
+            @apply underline;
+
+            &:hover {
+                @apply text-ogColor;
+            }
+        }
+    }
+}

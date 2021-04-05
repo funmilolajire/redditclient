@@ -1,22 +1,16 @@
-import { useRef, useLayoutEffect, useEffect } from 'react';
+import { useRef, useLayoutEffect, useEffect, useCallback } from 'react';
 import { useAppDispatch, useAppSelector } from '../store/hooks';
 import { getSubredditsList } from '../store/slices/subredditsSlice';
+import { handleSubredditChange } from '../store/slices/postsSlice';
 import { gsap } from 'gsap';
-import { Searchbar } from './Searchbar';
 import { Subreddit } from './Subreddit';
+import { IoIosClose } from 'react-icons/io';
 
 export const Subreddits = () => {
     //animations
-    const boxRef = useRef<HTMLDivElement>(null);
     const subRef = useRef<HTMLHeadingElement>(null);
     useLayoutEffect(() => {
         const tl = gsap.timeline({})
-        tl.from([boxRef.current], {
-            y: '-120%',
-            delay: 2,
-            duration: 2,
-            ease: 'power3.inOut'
-        })
         tl.from([subRef.current], {
             delay: -1,
             scale: 2,
@@ -29,25 +23,27 @@ export const Subreddits = () => {
     //get subreddits list
     const subreddits = useAppSelector((state: { subreddits: { value: string[] } }): string[] => state.subreddits.value)
     const dispatch = useAppDispatch();
-    const getSubreddits = async () => {
+    const getSubreddits = useCallback(async () => {
         await dispatch(getSubredditsList());
-    }
+    }, [dispatch])
     useEffect(() => {
         getSubreddits();
-    }, [])
+    }, [getSubreddits])
+
+    //get and remove active subreddit
+    const subreddit = useAppSelector(state => state.posts.subreddit)
+    const removeSubreddit = () => {
+        dispatch(handleSubredditChange(''))
+    }
 
     //JSX
     return (
-        <div ref={boxRef} className="Subreddits">
-            <div className="Subreddits--Container">
-                <Searchbar />
-                <section className="pt-12">
-                    <h2 ref={subRef} className="">subreddits</h2>
-                    <ul className="subreddits-list">
-                        {subreddits && subreddits.map(subreddit => <Subreddit key={subreddit}>{subreddit}</Subreddit>)}
-                    </ul>
-                </section>
-            </div>
-        </div>
+        <section className="pt-12 Subreddits">
+            <h2 ref={subRef} className="">subreddits</h2>
+            {subreddit.length !== 0 && <div className="current--subreddit"><span className="subreddit">{subreddit}</span><span onClick={removeSubreddit} className="icon"><IoIosClose /></span></div>}
+            <ul className="subreddits--list">
+                {subreddits && subreddits.map(subreddit => <Subreddit key={subreddit}>{subreddit}</Subreddit>)}
+            </ul>
+        </section>
     )
 }

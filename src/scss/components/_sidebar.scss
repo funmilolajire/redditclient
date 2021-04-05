@@ -1,0 +1,69 @@
+.Sidebar {
+    @apply fixed left-0 z-10 w-1/4 pt-40 bg-gray-50 overflow-hidden shadow-lg;
+    height: 100vh;
+
+    .Sidebar--Container {
+        @apply relative w-full p-16;
+
+        span.close {
+            @apply hidden;
+        }
+    }
+}
+
+@media all and (max-width: 1000px) {
+    .Sidebar {
+        width: 30%;
+    }
+}
+
+@media all and (max-width: 805px) {
+    .Sidebar {
+        .Sidebar--Container {
+            @apply p-12;
+        }
+    }
+}
+
+@media all and (max-width: 756px) {
+    .Sidebar {
+        .Sidebar--Container {
+            @apply p-9;
+        }
+    }
+}
+
+@media all and (max-width: 700px) {
+    .Sidebar {
+        width: 50%;
+
+        .Sidebar--Container {
+
+            span.close {
+                @apply block text-6xl absolute right-0 cursor-pointer -top-8 text-ogColor;
+            }
+        }
+    }
+
+    .Mobile--Sidebar {
+        @apply fixed z-10 rounded-br-2xl cursor-pointer shadow-lg w-full bg-gray-700 left-0 items-center justify-center;
+        padding-top: 10vh;
+        width: 12vw;
+        height: 15rem;
+
+        span {
+            @apply text-ogColor text-6xl cursor-pointer;
+        }
+    }
+}
+
+
+@media all and (max-width: 450px) {
+    .Sidebar {
+        width: 65%;
+
+        .Sidebar--Container {
+            @apply p-7 pt-9;
+        }
+    }
+}

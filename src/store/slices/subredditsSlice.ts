@@ -1,36 +1,28 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import axios from 'axios';
+import { subredditsList } from '../api'
 
-interface SubredditState {
-    value: string[],
-    status: 'idle' | 'loading' | 'succeeded' | 'failed'
-}
-
+//set initial state
 const initialState: SubredditState = {
     value: [],
-    status: 'idle'
+    loading: true
 }
 
-export const getSubredditsList = createAsyncThunk('subreddits',
-    async () => {
-        const url = 'https://www.reddit.com';
-        const response = await axios(`${url}/subreddits.json`);
-        return response.data.data.children.map(
-            (subreddit: { data: { display_name_prefixed: string } }) => subreddit.data.display_name_prefixed
-            );
-    }
-)
+//get subreddits list
+export const getSubredditsList = createAsyncThunk('subreddits', subredditsList)
 
-export const subredditsSlice = createSlice({
+//create subreddits slice
+const subredditsSlice = createSlice({
     name: "subreddits",
     initialState,
     reducers: {},
     extraReducers: builder => {
-        builder.addCase(getSubredditsList.fulfilled, (state, action) => {
-            state.value = action.payload;
-            state.status = 'succeeded';
+        builder.addCase(getSubredditsList.fulfilled, (state: SubredditState, { payload }) => {
+            if (payload)
+                state.value = payload;
+            state.loading = false;
         })
     }
 })
 
+//export subreddits slice reducer
 export default subredditsSlice.reducer

@@ -1,11 +1,13 @@
 import { configureStore } from '@reduxjs/toolkit';
-import termReducer from './slices/termSlice';
 import subredditsReducer from './slices/subredditsSlice';
+import postsReducer from './slices/postsSlice';
+import moreInformationReducer from './slices/moreInformationSlice';
 
 export const store = configureStore({
   reducer: {
-    term: termReducer,
-    subreddits: subredditsReducer
+    subreddits: subredditsReducer,
+    posts: postsReducer,
+    moreInformation: moreInformationReducer
   },
 });
 

@@ -1,12 +1,14 @@
 import { mount } from 'enzyme';
-// import renderer from 'react-test-renderer';
 import { Provider } from 'react-redux';
 import { store } from '../../store/store';
 import { App } from '../../app/App';
 import { Header } from '../../components/Header';
-import { Subreddits } from '../../components/Subreddits';
-import { Posts } from '../../components/Posts';
+import { Main } from '../../components/Main';
+import { Sidebar } from '../../components/Sidebar';
+import { ScrollToTop } from '../../components/ScrollToTop';
 // import { ComingSoon } from '../../components/ComingSoon';
+
+window.scrollTo = jest.fn()
 
 describe('renders App Component', () => {
   const AppComponent = mount(
@@ -14,20 +16,25 @@ describe('renders App Component', () => {
       <App />
     </Provider>
   );
-
-  describe('Contains Child Components', () => {
-    test('contains all components', () => {
-      // const getComponents = AppComponent.containsAllMatchingElements([<Header />, <ComingSoon />])
-      const getComponents = AppComponent.containsAllMatchingElements([<Header />, <Subreddits />, <Posts />]);
-      expect(getComponents).toBeTrue();
+  afterEach(() => {
+    jest.resetAllMocks();
+  });
+  afterAll(() => {
+    jest.clearAllMocks();
+  });
+  describe('make snapshot of App component', () => {
+    test('matches the snapshot', () => {
+      expect(AppComponent).toMatchSnapshot();
     })
   })
 
-  //  describe('make snapshot of App component', () => {
-  //     test('matches the snapshot', () => {
-  //       let tree = renderer.create(AppComponent).toJSON()
-  //       expect(tree).toMatchSnapshot();
-  //     })
-  //   })
+
+  describe('Contains Children Components', () => {
+    test('contains all components', () => {
+      // const getComponents = AppComponent.containsAllMatchingElements([<Header />, <ComingSoon />])
+      const getComponents = AppComponent.containsAllMatchingElements([<Header />, <Main />, <Sidebar />, <ScrollToTop />]);
+      expect(getComponents).toBeTrue();
+    })
+  })
 
 });

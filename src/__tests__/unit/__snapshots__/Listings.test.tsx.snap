@@ -1,0 +1,98 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Listings component make a snapshot of Listings Component 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <Listings>
+    <div
+      className="Listings"
+    >
+      <ul
+        className="Listings--List"
+      >
+        <Listing
+          key="hot"
+          listItem="hot"
+        >
+          <li
+            data-testid="hot"
+            id="hot"
+            onClick={[Function]}
+          >
+            hot
+          </li>
+        </Listing>
+        <Listing
+          key="new"
+          listItem="new"
+        >
+          <li
+            data-testid="new"
+            id="new"
+            onClick={[Function]}
+          >
+            new
+          </li>
+        </Listing>
+        <Listing
+          key="top"
+          listItem="top"
+        >
+          <li
+            data-testid="top"
+            id="top"
+            onClick={[Function]}
+          >
+            top
+          </li>
+        </Listing>
+        <Listing
+          key="best"
+          listItem="best"
+        >
+          <li
+            data-testid="best"
+            id="best"
+            onClick={[Function]}
+          >
+            best
+          </li>
+        </Listing>
+        <Listing
+          key="rising"
+          listItem="rising"
+        >
+          <li
+            data-testid="rising"
+            id="rising"
+            onClick={[Function]}
+          >
+            rising
+          </li>
+        </Listing>
+        <Listing
+          key="controversial"
+          listItem="controversial"
+        >
+          <li
+            data-testid="controversial"
+            id="controversial"
+            onClick={[Function]}
+          >
+            controversial
+          </li>
+        </Listing>
+      </ul>
+    </div>
+  </Listings>
+</Provider>
+`;
