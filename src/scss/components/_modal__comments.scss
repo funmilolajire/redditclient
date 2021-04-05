@@ -1,0 +1,23 @@
+.Modal--Comments {
+    h3 {
+        @apply text-3xl pt-12;
+        -webkit-text-decoration-line: underline;
+        text-decoration-line: underline;
+        -webkit-text-decoration-style: double;
+        text-decoration-style: double;
+        text-decoration-thickness: 3px;
+        -webkit-text-decoration-color: rgb(255, 136, 0);
+        text-decoration-color: rgb(255, 136, 0);
+        -webkit-text-decoration-skip: ink;
+        text-decoration-skip-ink: auto;
+        text-underline-position: under;
+    }
+
+    div.comments {
+        @apply px-6 divide-y-2 divide-gray-200 divide-opacity-50;
+    }
+
+    p.no--comments {
+        @apply text-3xl pt-10 text-ogColor font-semibold;
+    }
+}

@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Listing component make a snapshot of Listing Component 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <Listing
+    listItem="money"
+  >
+    <li
+      data-testid="money"
+      id="money"
+      onClick={[Function]}
+    >
+      money
+    </li>
+  </Listing>
+</Provider>
+`;

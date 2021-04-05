@@ -1,0 +1,38 @@
+.Listing {
+    @apply border cursor-pointer transform-gpu duration-100 rounded-full py-3 px-4 border-ogColor;
+
+    &:hover {
+        @apply shadow-lg bg-ogColor text-white;
+    }
+
+    &.active {
+        @apply shadow-lg bg-ogColor text-white;
+    }
+}
+
+@media all and (max-width: 935px) {
+    .Listing {
+        @apply py-3 px-3;
+    }
+}
+
+@media all and (max-width: 895px) {
+    .Listing {
+        @apply py-2 px-2;
+    }
+}
+
+@media all and (max-width: 850px) {
+    .Listing {
+        @apply py-3 text-3xl px-2;
+    }
+}
+
+@media all and (max-width: 700px) {
+    .Listing {
+        @apply py-3 px-4;
+        min-width: -webkit-fit-content;
+        min-width: -moz-fit-content;
+        min-width: fit-content;
+    }
+}

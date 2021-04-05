@@ -17,7 +17,7 @@ export const ComingSoon = () => {
 
     return (
         <div ref={boxRef} className="ComingSoon">
-            <div className="">
+            <div>
                 <p>Coming Soon</p>
             </div>
         </div>

@@ -1,1 +1,141 @@
-.Modal {}
+.Modal {
+    @apply min-h-screen py-32 w-3/4 mt-28 overflow-y-auto shadow-inner fixed inset-0 bg-gray-50 text-gray-700 z-50;
+    margin-left: calc(25vw + 2rem);
+
+    .Modal--Inner {
+        @apply relative container;
+
+        header.Modal--Header {
+            @apply fixed w-full inset-0 h-20 flex justify-end items-center;
+
+            span.Modal--Close {
+                @apply cursor-pointer flex relative items-center justify-center bg-ogColor px-10 py-4 text-5xl text-gray-100;
+
+                &:hover {
+                    @apply text-ogColor bg-gray-700;
+                }
+            }
+        }
+
+        .Modal--Content {
+            @apply relative px-56;
+        }
+
+        .Modal--Loading {
+            @apply flex items-center justify-center;
+
+            span {
+                display: inline-block;
+                position: relative;
+                width: 80px;
+                height: 80px;
+
+                &::after {
+                    content: " ";
+                    display: block;
+                    border-radius: 50%;
+                    width: 0;
+                    height: 0;
+                    margin: 8px;
+                    box-sizing: border-box;
+                    border: 32px solid #f80;
+                    border-color: #f80 transparent #f80 transparent;
+                    -webkit-animation: loader 1.2s infinite;
+                    animation: loader 1.2s infinite;
+                }
+            }
+        }
+    }
+}
+
+@-webkit-keyframes loader {
+    0% {
+        transform: rotate(0);
+        -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+        animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+
+    50% {
+        transform: rotate(900deg);
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+
+    100% {
+        transform: rotate(1800deg);
+    }
+}
+
+@keyframes loader {
+    0% {
+        transform: rotate(0);
+        -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+        animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+
+    50% {
+        transform: rotate(900deg);
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+
+    100% {
+        transform: rotate(1800deg);
+    }
+}
+
+@media all and (max-width:1200px) {
+    .Modal {
+        .Modal--Inner {
+            .Modal--Content {
+                @apply px-44;
+            }
+        }
+    }
+}
+
+@media all and (max-width:1000px) {
+    .Modal {
+        margin-left: calc(30vw + 2rem);
+        width: 70%;
+
+        .Modal--Inner {
+            .Modal--Content {
+                @apply px-36;
+            }
+        }
+    }
+}
+
+@media all and (max-width:900px) {
+    .Modal {
+        .Modal--Inner {
+            .Modal--Content {
+                @apply px-24;
+            }
+        }
+    }
+}
+
+@media all and (max-width:800px) {
+    .Modal {
+        .Modal--Inner {
+            .Modal--Content {
+                @apply px-12;
+            }
+        }
+    }
+}
+
+@media all and (max-width:700px) {
+    .Modal {
+        width: 100vw;
+        margin-left: 0;
+
+        .Modal--Inner {
+            .Modal--Content {
+                @apply px-8;
+            }
+        }
+    }
+}

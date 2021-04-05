@@ -1,18 +1,30 @@
-.Subreddits {
-    @apply fixed left-0 z-10 w-1/4 h-screen overflow-hidden shadow-lg bg-gray-50;
+section.Subreddits {
+    h2 {
+        @apply pb-4 text-5xl font-light text-ogColor;
+    }
 
-    div.Subreddits--Container {
-        @apply relative w-full p-16;
+    div.current--subreddit {
+        @apply flex mx-auto w-full bg-white items-center justify-between border-2 mb-4 py-2 pr-0 pl-4 rounded-full;
 
-        section {
-            h2 {
-                @apply pb-4 text-5xl font-light text-ogColor;
-            }
+        span {
+            @apply text-2xl font-semibold text-ogColor;
+        }
 
-            ul.subreddits-list {
-                @apply overflow-y-scroll overflow-x-hidden;
-                max-height: 55vh;
+        span.subreddit {
+            @apply truncate overflow-ellipsis overflow-hidden;
+        }
+
+        span.icon {
+            @apply transform-gpu duration-100 text-5xl cursor-pointer;
+
+            &:hover {
+                @apply scale-125;
             }
         }
+    }
+
+    ul.subreddits--list {
+        @apply overflow-y-scroll overflow-x-hidden;
+        max-height: 50vh;
     }
 }

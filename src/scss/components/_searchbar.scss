@@ -1,15 +1,16 @@
 .Searchbar {
     @apply box-border w-full border-2 border-solid shadow-sm rounded-3xl;
 
-    &:focus {
+    &:focus-within {
         @apply border-ogColor;
     }
 
     .Searchbar--Container {
-        @apply flex items-center;
+        @apply flex items-center w-full;
 
         input {
-            @apply w-11/12 h-full px-4 py-2 text-2xl border-0 font-bold text-gray-700 placeholder-gray-400 bg-transparent;
+            @apply h-full px-4 py-2 text-2xl border-0 font-bold text-gray-700 placeholder-gray-400 bg-transparent;
+            width: 85%;
 
             &:focus {
                 @apply outline-none;
@@ -17,7 +18,8 @@
         }
 
         div.Searchbar--Icon {
-            @apply w-1/12 px-1 py-3;
+            @apply flex items-center justify-center;
+            width: 15%;
 
             svg {
                 @apply w-6 text-gray-400 bg-transparent cursor-pointer fill-current;

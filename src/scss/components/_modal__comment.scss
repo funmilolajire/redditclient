@@ -1,0 +1,52 @@
+.ModalComment {
+    @apply container py-6;
+
+    a {
+        @apply underline;
+
+        &:hover {
+            @apply text-ogColor;
+        }
+    }
+
+    p.Comment--Info {
+        @apply text-2xl relative leading-relaxed text-gray-600 text-opacity-80;
+
+        span {
+            @apply font-semibold;
+        }
+    }
+
+    div.Comment--Body {
+        @apply overflow-x-hidden text-gray-800 py-3 text-2xl;
+        width: 100%;
+    }
+
+    div.Comment--Bottom {
+        @apply flex items-center space-x-4;
+
+        .dot-icon {
+            @apply text-3xl;
+        }
+
+        div {
+            @apply items-center text-xl text-gray-500 flex;
+
+            .icon {
+                @apply mr-1 text-4xl;
+            }
+
+            span.value {
+                @apply font-semibold pr-1;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 450px) {
+    div.Comment--Bottom {
+        span.label {
+            @apply hidden;
+        }
+    }
+}

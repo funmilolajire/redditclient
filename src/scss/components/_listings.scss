@@ -1,0 +1,49 @@
+.Listings {
+    @apply m-8 bg-gray-50 py-4 px-24 shadow-lg rounded-2xl;
+
+    .Listings--List {
+        @apply flex text-3xl space-x-6;
+    }
+}
+
+@media all and (max-width: 850px) {
+    .Listings {
+        @apply px-16;
+    }
+}
+
+@media all and (max-width: 795px) {
+    .Listings {
+        @apply px-11;
+    }
+}
+
+@media all and (max-width: 756px) {
+    .Listings {
+        @apply px-8;
+    }
+}
+
+@media all and (max-width: 735px) {
+    .Listings {
+        @apply px-3;
+    }
+}
+
+@media all and (max-width: 700px) {
+    .Listings {
+        max-width: 80%;
+        margin-left: auto;
+        // overflow: hidden;
+
+        .Listings--List {
+            scrollbar-width: none;
+            overflow-x: scroll;
+        }
+    }
+}
+
+.Listings .Listings--List::-webkit-scrollbar {
+    width: 0 !important;
+    display: none;
+}

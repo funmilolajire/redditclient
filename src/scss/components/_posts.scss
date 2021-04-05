@@ -1,6 +1,15 @@
 .Posts {
-    @apply relative w-3/4;
-    .PostsContainer {
-        @apply p-8 m-8 divide-y-2 divide-gray-200 shadow-lg divide-opacity-50 rounded-2xl bg-gray-50;
+    @apply px-8 m-8 divide-y-2 divide-gray-200 shadow-lg divide-opacity-50 rounded-2xl bg-gray-50;
+
+    p.search--results {
+        @apply p-8 text-3xl text-gray-700;
+
+        span {
+            @apply text-ogColor;
+        }
+    }
+
+    div.no--results {
+        @apply py-10 text-5xl;
     }
 }

@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Subreddits component make a snapshot of Subreddits Component 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <Subreddits>
+    <section
+      className="pt-12 Subreddits"
+    >
+      <h2
+        className=""
+      >
+        subreddits
+      </h2>
+      <ul
+        className="subreddits--list"
+      />
+    </section>
+  </Subreddits>
+</Provider>
+`;

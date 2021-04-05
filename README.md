@@ -1,10 +1,23 @@
 # Reddit Client  
 
+<div align="center">
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8e0a7204-8850-4b4a-9340-01317eaabc56/deploy-status)](https://app.netlify.com/sites/redditclient/deploys)
+[![CircleCI](https://circleci.com/gh/funmilolajire/redditclient.svg?style=svg)](https://circleci.com/gh/funmilolajire/redditclient)
+[![GitHub Issues](https://img.shields.io/github/issues/funmilolajire/redditclient.svg)](https://github.com/funmilolajire/redditclient/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/funmilolajire/redditclient.svg)](https://github.com/funmilolajire/redditclient/pulls)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
+
+</div>
+
 > This is a web application that retrieves data from reddit using it's api and allows users to view and search posts and comments provided by the api.
 
 ## Table of contents  
 
 - [General info](#general-info)
+- [Screenshots](#screenshots)
+- [Technologies](#technologies)
+- [Setup](#setup)
 - [Features](#features)
 - [Status](#status)
 - [Inspiration](#inspiration)
@@ -12,38 +25,32 @@
 
 ## General info  
 
-This project is built on reddit's api, user's are able to see an initial view when first visiting the site, they can search for posts using terms, can filter the results based on predefined categories and view comments under each post. It is responsive and can be used on any modern browser.  
-This project is built to practice my react, redux, and test driven development skills. I use git for version control, zenhub for project management, jest and enzyme to write unit tests, testcafe for end to end tests, gsap for animations, circleci to set up the project's ci/cd workflow, code climate for code coverage and maintainability, and wrote the code following web accessiblity best practices.  
+This project is built on reddit's api, user's are able to see an initial view when first visiting the site, they can search for posts using terms, can filter the results based on predefined categories and view comments under each post. It is responsive and can be used on any modern browser.
 
-<!-- ## Screenshots include wireframes plix  
+## Screenshots  
 
-(!)[Example screenshot](./img/screenshot.png)
+![mainScreenshot](./public/screenshots/RedditClient.png)
+![modalScreenshot](./public/screenshots/RedditClientModal.png)
 
 ## Technologies  
 
-- Tech 1 - version 1.0
-- Tech 2 - version 2.0
-- Tech 3 - version 3.0
+- React - version 17.0.1  
+- ReduxJS/Toolkit - version 1.5.0
+- TailwindCSS - version 2.0.3
+- TypeScript - version 4.0.3
+- GSAP - version 3.6.0
+- Node Sass - version 5.0.0
+- VideoJS - version 7.11.4
+- Enzyme - version 3.11.0
+- DayJS - version 1.10.4
+- HTML React Parser - version 1.2.4
+- React Icons - version 4.2.0
 
 ## Setup  
 
-Describe how to install / setup your local environement / add link to demo version.
-
-## Code Examples  
-
-Show examples of usage:
-`put-your-code-here`
--->
+Visit [redditclient](https://redditclient.netlify.app) i your browser.
 
 ## Features  
-
-<!--List of features ready and TODOs for future development
-- Awesome feature 1
-- Awesome feature 2
-- Awesome feature 3
--->
-
-To-do list:  
 
 - Application can be used on any device
 - Application can be used on any modern browser
@@ -52,11 +59,11 @@ To-do list:
 - Users can filter data based on predefined categories
 - Users are shown a detail view when they select an item
 - Users are able to leave an error state
-- Application should be a progressive web app
+- Application is a progressive web app
 
 ## Status  
 
-Project is: _in progress_
+Project is: _finished_
 
 ## Inspiration  
 
