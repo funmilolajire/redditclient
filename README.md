@@ -4,7 +4,6 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/8e0a7204-8850-4b4a-9340-01317eaabc56/deploy-status)](https://app.netlify.com/sites/redditclient/deploys)
 [![CircleCI](https://circleci.com/gh/funmilolajire/redditclient.svg?style=svg)](https://circleci.com/gh/funmilolajire/redditclient)
-[![Maintainability](https://api.codeclimate.com/v1/badges/41d360fd6a9955a30487/maintainability)](https://codeclimate.com/github/funmilolajire/redditclient/maintainability)
 [![GitHub Issues](https://img.shields.io/github/issues/funmilolajire/redditclient.svg)](https://github.com/funmilolajire/redditclient/issues)
 [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/funmilolajire/redditclient.svg)](https://github.com/funmilolajire/redditclient/pulls)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
